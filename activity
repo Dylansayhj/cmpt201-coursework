@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+
+  fork();
+  char mess= "Hello world!\n";
+  for (int i=0; i<strlen(mess);i++){
+  printf("%c,mess[i]");
+  fflush(stdout);
+  sleep(1);
+  }
+  printf("DONE\n");
+  }
